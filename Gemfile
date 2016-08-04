@@ -108,7 +108,7 @@ gem 'devise_invitable', '~> 1.6'
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-gem 'capistrano',         require: false
+gem 'capistrano', '3.5.0',  require: false
 gem 'capistrano-rvm',     require: false
 gem 'capistrano-rails',   require: false
 gem 'capistrano-bundler', require: false
