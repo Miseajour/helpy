@@ -1,5 +1,8 @@
 # General Settings:
 
+AppSettings.defaults["settings.tickets"] = Settings.tickets
+AppSettings.defaults["settings.forums"] = Settings.forums
+AppSettings.defaults["settings.knowledgebase"] = Settings.knowledgebase
 AppSettings.defaults["settings.parent_site"] = Settings.parent_site
 AppSettings.defaults["settings.parent_company"] = Settings.parent_company
 AppSettings.defaults["settings.site_url"] = Settings.site_url
@@ -10,6 +13,7 @@ AppSettings.defaults["settings.support_phone"] = Settings.support_phone
 AppSettings.defaults["settings.google_analytics_id"] = Settings.google_analytics_id
 AppSettings.defaults["settings.recaptcha_site_key"] = Settings.recaptcha_site_key
 AppSettings.defaults["settings.recaptcha_api_key"] = Settings.recaptcha_api_key
+AppSettings.defaults["settings.only_private"] = Settings.only_private
 
 
 # Design: (Colors etc.)

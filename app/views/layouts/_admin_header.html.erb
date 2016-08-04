@@ -22,9 +22,8 @@
           <%= menu_group pull: :right do %>
               <%#= menu_item "Dashboard", admin_dashboard_path %>
               <%= menu_item t(:discussions, default: "Discussions"), admin_topics_path if current_user.is_agent? %>
-              <%= menu_item t(:content, default: "Content"), admin_categories_path, class:'kblink' if Settings.knowledgebase if current_user.is_editor? %>
-              <%= menu_item t(:communities, default: "Communities"), admin_forums_path if Settings.forums if current_user.is_agent? %>
-              <%= menu_item t(:app_store, default: "App Store"), "http://helpy.io/store/" %>
+              <%= menu_item t(:content, default: "Content"), admin_categories_path, class:'kblink' if AppSettings['settings.knowledgebase']=="1" if current_user.is_editor? %>
+              <%= menu_item t(:communities, default: "Communities"), admin_forums_path if AppSettings['settings.forums']=="1" if current_user.is_agent? %>
           <% end %>
 
       <% end %>

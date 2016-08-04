@@ -124,6 +124,7 @@ class TopicsController < ApplicationController
         @user.name = params[:topic][:user][:name]
         @user.login = params[:topic][:user][:email].split("@")[0]
         @user.email = params[:topic][:user][:email]
+        @user.cell_phone = params[:topic][:user][:cell_phone]
         @user.password = User.create_password
         built_user = true
       end

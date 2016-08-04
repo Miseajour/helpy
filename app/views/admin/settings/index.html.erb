@@ -45,6 +45,24 @@
         <%= f.text_field 'settings.google_analytics_id', value: AppSettings['settings.google_analytics_id'], label: "Google Analytics ID" %>
         <%= f.text_field 'settings.recaptcha_site_key', value: AppSettings['settings.recaptcha_site_key'], label: "Recaptcha Site Key" %>
         <%= f.text_field 'settings.recaptcha_api_key', value: AppSettings['settings.recaptcha_api_key'], label: "Recaptcha API Key" %>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <%= f.check_box 'settings.tickets', { checked: AppSettings['settings.tickets'] == "1", label: "Activate tickets" } %>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <%= f.check_box 'settings.forums', { checked: AppSettings['settings.forums'] == "1", label: "Activate forums" } %>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <%= f.check_box 'settings.knowledgebase', { checked: AppSettings['settings.knowledgebase']=="1", label: "Activate knowledgebase" } %>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <%= f.check_box 'settings.only_private', { checked: AppSettings['settings.only_private'] == "1", label: "Display only option for private message" } %>
+        </div>
+        <div class="clearfix">
+        </div>
+
       </div>
       <div class="settings-section design hidden">
           <div class="row">

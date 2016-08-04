@@ -149,7 +149,7 @@ en:
   social_info: Social
   edit_user: Edit User
   work_phone: work
-  cell_phone: cell
+  cell_phone: phone
 
   # User search results
   users_found:
@@ -264,6 +264,8 @@ en:
           create:
 
   breadcrumbs:
+    locales:
+      root: *root
     application:
       root: *root
     categories:

@@ -8,9 +8,9 @@
 							<span class="hidden-lg hidden-sm hidden-md"><%= render('result/search_form') %></span>
 							<%= menu_divider %>
 
-							<%= menu_item t(:your_tickets), tickets_path, Settings.tickets if user_signed_in? %>
-							<%= menu_item t(:knowledgebase), categories_path, class:'kblink' if Settings.knowledgebase %>
-							<%= menu_item t(:community), forums_path if Settings.forums %>
+							<%= menu_item t(:your_tickets), tickets_path, AppSettings['settings.tickets']=="1" if user_signed_in? %>
+							<%= menu_item t(:knowledgebase), categories_path, class:'kblink' if AppSettings['settings.knowledgebase']=="1" %>
+							<%= menu_item t(:community), forums_path if AppSettings['settings.forums']=="1" %>
 							<%= menu_item t(:ask_a_question), new_topic_path %>
 							<%= menu_divider %>
 							<%= menu_item "#{t(:back_to).titleize} #{AppSettings['settings.parent_company']}", AppSettings['settings.parent_site'], :class => 'hidden-lg hidden-md hidden-sm border-bottom' %>

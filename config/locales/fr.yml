@@ -167,7 +167,7 @@ fr:
   # Content
   new_category: Nouvelle Catégorie
   new_content: Nouveau contenu
-  front_page_categories: Catégories sur la page d'accueil 
+  front_page_categories: Catégories sur la page d'accueil
   other_categories: Autres Catégories
   edit: Modifier
   edit_category: Modifier cette catégorie
@@ -207,7 +207,7 @@ fr:
         name: Nom
         company: Compagnie
         work_phone: Travail
-        cell_phone: Portable
+        cell_phone: Téléphone
         city: Ville
         state: Région
       topic:
@@ -243,6 +243,8 @@ fr:
           create:
 
   breadcrumbs:
+    locales:
+      root: *root
     application:
       root: *root
     categories:
