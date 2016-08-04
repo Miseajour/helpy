@@ -26,3 +26,7 @@ config/settings_bu.yml
 /.ruby-version
 /.ruby-gemset
 /.rvmrc
+
+Capfile
+config/deploy.rb
+config/deploy/*
